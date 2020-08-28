@@ -94,6 +94,34 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
+          
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Pinterest </h3>
+              <div class="subheading mb-3">Software Engineering Intern</div>
+              <ul>
+                <li>
+                  Built a data workflow, using a series of Apache Spark jobs, that would identify Pinterest pages crawled by the Googlebot, determine interlinks originating from these pages, and calculate aggregated metrics about the crawled and linked pages.
+                </li>
+                <li>
+                  Utilized the data workflow to collect one month’s worth of crawl data . The workflow identified over 70 billion Pinterest pages crawled by the googlebot and over 200 billion interlinks originating from these crawled pages.
+                </li>
+                <li>
+                  Reduced the overall run time of the data workflow by 40% by eliminating data skew which allowed the Spark jobs to run with a greater degree of parallelism.
+                </li>
+                <li>
+                  Leveraged the Spark GraphX library to build a directed graph representing the Pinterest pages identified from the data workflow and the interlinks between them; Used GraphX to also run PageRank on this graph which assigned a score to each page in the input graph allowing us to rank the pages from ”best” to ”worst”.
+                </li>               
+                <li>
+                  Used inferential statistics and correlation analysis to identify relationships between the generated ”ranking” of a page and the amount of traffic that page received.
+                </li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2020 - August 2020</span>
+            </div>
+          </div>
+        </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -113,9 +141,6 @@
                   Engineered a monitoring protocol which would trigger the appropriate failure recovery mechanism depending on a complete or partial failure of the in-memory database.
                 </li>
                 <li>
-                  Containerized and deployed application to a distributed system allowing for multiple workers to process update events in parallel.
-                </li>
-                <li>
                   Iteratively developed modularized packages while writing JUnit tests and logging using Log4j2.
                 </li>
               </ul>
@@ -124,26 +149,6 @@
               <span class="text-primary">May 2019 - August 2019 </span>
             </div>
           </div>
-
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Illinois at Urbana-Champaign </h3>
-              <div class="subheading mb-3">Course Assisant</div>
-              <ul>
-                <li>
-                  Assisted in a lab of 30 students. Provided students with in-depth descriptions of fundamental concepts learned during lecture and introduced more complex concepts to experienced students.
-                </li>
-                <li>
-                  Participated in online discourse forum and helped solve issues with Java/Gradle, cleared up confusions with programming logic, and answered questions regarding class policy.
-                </li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2018 - January 2019</span>
-            </div>
-          </div>
-        </div>
 
       </section>
 
@@ -156,7 +161,7 @@
               <h3 class="mb-0">University of Illinois Urbana-Champaign</h3>
               <div class="subheading mb-3">Bachelor of Science</div>
               <div>Computer Science</div>
-              <p>GPA: 3.80 </p>
+              <p>GPA: 3.76 </p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">August 2017 - December 2020</span>
@@ -172,22 +177,22 @@
               Data Structures</li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Applied Parallel Programming</li>
+              Systems Programming</li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Virtual Reality</li>
+              Deep Learning</li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Computer Architecture</li>
+              Artificial Intelligence</li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Numerical Methods</li>
+              Distributed Systems</li>
             <li>
-              Artificial Intelligence<i class="fa-li fa fa-check"></i>
+              <i class="fa-li fa fa-check"></i>
+              Parallel Programming</li>
+            <li>
+              Computer Architecture<i class="fa-li fa fa-check"></i>
               </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Text Information Systems (Text Retrieval / Data Mining)</li>
           </ul>
         </div>
       </section>
@@ -196,6 +201,24 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
+
+                    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">NLP Stock Predictor</h3>
+              <div class="subheading mb-3">Java</div>
+              <div class="row">
+    <div class="col-md-12 text-center">
+      <ul class="text-left" style="display:inline-block;vertical-align:middle;">
+        <li>Performed sentiment analysis on Reddit comments about Fortune 500 companies using TextBlob.</li>
+        <li>Built a regression model to find trends between the ”polarity” (change in sentiment over the course of a week) for acompany and its historical change in price during that time span.</li>
+      </ul>
+    </div>
+</div>            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Skills Used: Python, Pandas, Numpy, Scikit </span>
+            </div>
+          </div>
+          
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -221,22 +244,7 @@ structure.</li>
           </div>
 
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Athlete Analyzer</h3>
-              <div class="subheading mb-3">Java</div>
-              <div class="row">
-    <div class="col-md-12 text-center">
-      <ul class="text-left" style="display:inline-block;vertical-align:middle;">
-        <li>Android application to obtain and interpret professional athlete performance.</li>
-        <li>Used native Java HttpUrlConnect and Base64 encoding to securely make api requests to MySportsFeeds.</li>
-      </ul>
-    </div>
-</div>            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Skills Used: Java, MySportsFeeds API, Android Studio </span>
-            </div>
-          </div>
+
 
       </section>
 
@@ -260,10 +268,6 @@ structure.</li>
                <li class="list-inline-item">
               <i class="devicon-cplusplus-plain-wordmark"></i>
             </li>
-              <li class="list-inline-item">
-              <i class="devicon-django-plain"></i>
-            </li>
-
             <li class="list-inline-item">
               <i class="devicon-git-plain-wordmark"></i>
             </li>
